@@ -1,0 +1,40 @@
+<p>search-resutls works!</p>
+
+<mat-form-field appearance="legacy">
+  <mat-label>Legacy form field</mat-label>
+  <input matInput placeholder="Placeholder">
+  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+  <mat-hint>Hint</mat-hint>
+</mat-form-field>
+
+<p>Shared message: {{ message }}</p>
+
+<ul>
+  <li *ngFor="let fruit of fruitsData">{{ fruit }}</li>
+</ul>
+
+<div class="flex">
+  <div ngDropdown>
+    <button mat-button ngDropdownControl>Audio</button>
+    <div ngDropdownContent>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, aperiam iusto? Enim dolorem culpa eaque fugit
+        fugiat reprehenderit quibusdam sequi? Autem recusandae sint voluptatibus necessitatibus consequatur doloribus
+        ipsum eum corrupti?
+      </p>
+    </div>
+  </div>
+
+  <div ngDropdown>
+    <button mat-button ngDropdownControl>Video</button>
+    <div ngDropdownContent>
+      <ul>
+        <li><a href="#">Dropdown Item 1</a></li>
+        <li><a href="#">Dropdown Item 2</a></li>
+        <li><a href="#">Dropdown Item 3</a></li>
+        <li><a href="#">Dropdown Item 4</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<app-search-resutls-card></app-search-resutls-card>
