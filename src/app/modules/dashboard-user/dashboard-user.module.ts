@@ -14,6 +14,7 @@ import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import { TabsComponent } from "./components/tabs/tabs.component";
 
 import { LoginDialogComponent } from "./components/login-dialog/login-dialog.component";
+import { LoginFormComponent } from './components/forms/login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LoginDialogComponent } from "./components/login-dialog/login-dialog.com
     StatusRequestCardComponent,
     DashboardComponent,
     TabsComponent,
-    LoginDialogComponent
+    LoginDialogComponent,
+    LoginFormComponent
   ],
   imports: [CommonModule, DashboardUserRoutingModule, SharedModule, AngularDropdownModule],
   entryComponents: [LoginDialogComponent]
