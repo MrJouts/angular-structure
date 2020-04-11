@@ -1,6 +1,32 @@
 <h2>Reactive form</h2>
-
+<h3>From Control</h3>
 <label>
   Name:
   <input type="text" [formControl]="name">
 </label>
+<p>
+  Value: {{ name.value }}
+</p>
+<p>
+  <button (click)="updateName()">Update name</button>
+</p>
+
+<h3>From Group</h3>
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <label>
+    First Name:
+    <input type="text" formControlName="firstName">
+  </label>
+  <label>
+    Last Name:
+    <input type="text" formControlName="lastName">
+  </label>
+  <button type="submit">Submit</button>
+</form>
+<p>
+  Value first name: {{ profileForm.value.firstName}}
+</p>
+<p>
+  Value last name: {{ profileForm.value.lastName}}
+</p>

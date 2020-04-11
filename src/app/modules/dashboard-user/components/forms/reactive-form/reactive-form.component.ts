@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-reactive-form',
@@ -9,9 +9,19 @@ import { FormControl } from '@angular/forms';
 export class ReactiveFormComponent implements OnInit {
   name = new FormControl('');
 
-  constructor() { }
+  profileForm = new FormGroup({
+    firstName: new FormControl(''),
+    lastName: new FormControl('')
+  })
 
-  ngOnInit() {
+  updateName() {
+    this.name.setValue('Nancy');
   }
+
+  onSubmit() {
+    console.warn(this.profileForm.value);
+  }
+
+  ngOnInit() { }
 
 }
