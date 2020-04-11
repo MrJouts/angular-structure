@@ -22,6 +22,11 @@ export class TabsComponent implements OnInit {
       label: "Login form",
       rla: false,
     },
+    {
+      path: "reactive-form",
+      label: "Reactive form",
+      rla: false,
+    },
   ];
   constructor() {}
 

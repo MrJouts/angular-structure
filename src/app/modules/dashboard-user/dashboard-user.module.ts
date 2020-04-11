@@ -1,6 +1,8 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { SharedModule } from "./../shared/shared.module";
 import { DashboardUserRoutingModule } from "./dashboard-user-routing.module";
 import { AngularDropdownModule } from 'angular-dropdown';
@@ -15,6 +17,7 @@ import { TabsComponent } from "./components/tabs/tabs.component";
 
 import { LoginDialogComponent } from "./components/login-dialog/login-dialog.component";
 import { LoginFormComponent } from './components/forms/login-form/login-form.component';
+import { ReactiveFormComponent } from './components/forms/reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -26,9 +29,10 @@ import { LoginFormComponent } from './components/forms/login-form/login-form.com
     DashboardComponent,
     TabsComponent,
     LoginDialogComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    ReactiveFormComponent
   ],
-  imports: [CommonModule, DashboardUserRoutingModule, SharedModule, AngularDropdownModule],
+  imports: [CommonModule, ReactiveFormsModule, DashboardUserRoutingModule, SharedModule, AngularDropdownModule],
   entryComponents: [LoginDialogComponent]
 })
-export class DashboardUserModule {}
+export class DashboardUserModule { }
