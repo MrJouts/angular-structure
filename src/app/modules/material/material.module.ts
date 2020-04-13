@@ -8,6 +8,11 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatIconModule } from "@angular/material/icon";
 import { MatTabsModule } from "@angular/material/tabs";
 
+import { 
+  MatCheckboxModule, 
+  MatListModule, 
+  MatCardModule } from '@angular/material';
+
 const modules = [
   MatButtonModule,
   MatToolbarModule,
@@ -15,7 +20,10 @@ const modules = [
   MatInputModule,
   MatFormFieldModule,
   MatIconModule,
-  MatTabsModule
+  MatTabsModule,
+  MatCheckboxModule, 
+  MatListModule, 
+  MatCardModule 
 ];
 @NgModule({
   declarations: [],

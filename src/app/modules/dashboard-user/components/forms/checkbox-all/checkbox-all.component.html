@@ -1,0 +1,23 @@
+<h2>{{ title }}</h2>
+
+<ul>
+  <li>
+    <label>
+      <input type="checkbox" [(ngModel)]="masterSelected" (change)="checkUncheckAll()">
+      All
+    </label>
+  </li>
+</ul>
+
+<ul>
+  <li *ngFor="let item of checkList">
+    <label>
+      <input type="checkbox" [(ngModel)]="item.isSelected" value="{{item.id}}" (change)="isAllSelected()">
+      {{ item.value }}
+    </label>
+  </li>
+</ul>
+
+<div>
+  <code>{{ checkedList }}</code>
+</div>

@@ -27,6 +27,16 @@ export class TabsComponent implements OnInit {
       label: "Reactive form",
       rla: false,
     },
+    {
+      path: "checkbox-all",
+      label: "Check all form",
+      rla: false,
+    },
+    {
+      path: "checkbox-all-material",
+      label: "Check all material",
+      rla: false,
+    },
   ];
   constructor() {}
 

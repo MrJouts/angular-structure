@@ -18,6 +18,8 @@ import { TabsComponent } from "./components/tabs/tabs.component";
 import { LoginDialogComponent } from "./components/login-dialog/login-dialog.component";
 import { LoginFormComponent } from './components/forms/login-form/login-form.component';
 import { ReactiveFormComponent } from './components/forms/reactive-form/reactive-form.component';
+import { CheckboxAllComponent } from './components/forms/checkbox-all/checkbox-all.component';
+import { CheckboxAllMaterialComponent } from './components/forms/checkbox-all-material/checkbox-all-material.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ReactiveFormComponent } from './components/forms/reactive-form/reactive
     TabsComponent,
     LoginDialogComponent,
     LoginFormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    CheckboxAllComponent,
+    CheckboxAllMaterialComponent
   ],
   imports: [CommonModule, ReactiveFormsModule, DashboardUserRoutingModule, SharedModule, AngularDropdownModule],
   entryComponents: [LoginDialogComponent]

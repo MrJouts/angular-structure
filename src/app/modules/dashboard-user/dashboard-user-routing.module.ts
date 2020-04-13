@@ -6,6 +6,8 @@ import { SearchResutlsComponent } from "./components/search-resutls/search-resut
 import { StatusRequestComponent } from "./components/status-request/status-request.component";
 import { LoginFormComponent } from "./components/forms/login-form/login-form.component";
 import { ReactiveFormComponent } from './components/forms/reactive-form/reactive-form.component';
+import { CheckboxAllComponent } from './components/forms/checkbox-all/checkbox-all.component';
+import { CheckboxAllMaterialComponent } from './components/forms/checkbox-all-material/checkbox-all-material.component';
 
 const routes: Routes = [
   {
@@ -17,6 +19,8 @@ const routes: Routes = [
       { path: "status-request", component: StatusRequestComponent },
       { path: "forms", component: LoginFormComponent },
       { path: "reactive-form", component: ReactiveFormComponent },
+      { path: "checkbox-all", component: CheckboxAllComponent },
+      { path: "checkbox-all-material", component: CheckboxAllMaterialComponent },
     ],
   },
 ];
