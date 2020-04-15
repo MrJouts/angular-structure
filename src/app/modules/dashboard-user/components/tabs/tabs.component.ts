@@ -28,6 +28,11 @@ export class TabsComponent implements OnInit {
       rla: false,
     },
     {
+      path: "template-drive-form",
+      label: "Template driven from",
+      rla: false,
+    },
+    {
       path: "checkbox-all",
       label: "Check all form",
       rla: false,
