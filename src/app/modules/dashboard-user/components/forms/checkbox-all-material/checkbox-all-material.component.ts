@@ -15,19 +15,19 @@ export class CheckboxAllMaterialComponent implements OnInit {
     this.checkbox_list = [
       {
         name: "Portuguese",
-        diable: false,
+        disable: false,
         checked: false,
         labelPosition: "before",
       },
       {
         name: "Spanish",
-        diable: false,
+        disable: false,
         checked: false,
         labelPosition: "after",
       },
       {
         name: "English",
-        diable: false,
+        disable: false,
         checked: false,
         labelPosition: "after",
       },
