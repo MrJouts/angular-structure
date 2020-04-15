@@ -20,6 +20,7 @@ import { LoginFormComponent } from './components/forms/login-form/login-form.com
 import { ReactiveFormComponent } from './components/forms/reactive-form/reactive-form.component';
 import { CheckboxAllComponent } from './components/forms/checkbox-all/checkbox-all.component';
 import { CheckboxAllMaterialComponent } from './components/forms/checkbox-all-material/checkbox-all-material.component';
+import { TemplateDrivenFormComponent } from './components/forms/template-driven-form/template-driven-form.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CheckboxAllMaterialComponent } from './components/forms/checkbox-all-ma
     LoginFormComponent,
     ReactiveFormComponent,
     CheckboxAllComponent,
-    CheckboxAllMaterialComponent
+    CheckboxAllMaterialComponent,
+    TemplateDrivenFormComponent
   ],
   imports: [CommonModule, ReactiveFormsModule, DashboardUserRoutingModule, SharedModule, AngularDropdownModule],
   entryComponents: [LoginDialogComponent]
