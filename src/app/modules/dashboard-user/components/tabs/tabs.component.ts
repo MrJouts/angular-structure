@@ -28,8 +28,8 @@ export class TabsComponent implements OnInit {
       rla: false,
     },
     {
-      path: "template-drive-form",
-      label: "Template driven from",
+      path: "template-driven-form",
+      label: "Template driven form",
       rla: false,
     },
     {

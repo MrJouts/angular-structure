@@ -6,9 +6,9 @@ import { SearchResutlsComponent } from "./components/search-resutls/search-resut
 import { StatusRequestComponent } from "./components/status-request/status-request.component";
 import { LoginFormComponent } from "./components/forms/login-form/login-form.component";
 import { ReactiveFormComponent } from "./components/forms/reactive-form/reactive-form.component";
+import { TemplateDrivenFormComponent } from "./components/forms/template-driven-form/template-driven-form.component";
 import { CheckboxAllComponent } from "./components/forms/checkbox-all/checkbox-all.component";
 import { CheckboxAllMaterialComponent } from "./components/forms/checkbox-all-material/checkbox-all-material.component";
-import { TemplateDrivenFormComponent } from "./components/forms/template-driven-form/template-driven-form.component";
 
 const routes: Routes = [
   {
