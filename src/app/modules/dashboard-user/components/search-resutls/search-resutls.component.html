@@ -1,10 +1,23 @@
 <div class="orders">
 
-  <mat-checkbox class="select-all" (change)="checkAll()">Select All</mat-checkbox>
+  <div class="card-controls">
+    <mat-checkbox class="select-all" [(ngModel)]="master_checked" (change)="checkAll()">Select All</mat-checkbox>
 
-  <div *ngIf="orders">
-    <app-search-resutls-card *ngFor="let item of orders" [order]="item" [checked]="master_check">
-    </app-search-resutls-card>
+    <button mat-raised-button color="primary" *ngIf="showButton">Request</button>
+  </div>
+
+  <div class="cards">
+    <div *ngIf="orders">
+      <app-search-resutls-card *ngFor="let item of orders" [order]="item" (checkedItem)="checkedItem($event)">
+      </app-search-resutls-card>
+    </div>
+    <div>
+      <mat-card>
+        <p>
+          {{ selectedOrders }}
+        </p>
+      </mat-card>
+    </div>
   </div>
 </div>
 

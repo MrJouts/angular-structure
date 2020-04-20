@@ -12,10 +12,33 @@
   background-color: #f0f0f0;
   padding: 2rem;
 
-  .select-all {
-    display: block;
+  .card-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 1rem;
   }
+
+  .select-all {
+    display: block;
+  }
+
+  .cards {
+    display: flex;
+
+    &>div {
+      flex: 1 1 50%;
+
+      &:last-of-type {
+        margin-left: 1.5rem;
+
+        mat-card {
+          min-height: 50px;
+        }
+      }
+    }
+  }
+  
 
   mat-card {
     margin-bottom: 1rem;

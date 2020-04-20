@@ -1,4 +1,5 @@
 <mat-card>
-  <mat-checkbox value="{{order.id}}" [ngModel]="checked" (change)="orderChange()">{{ order.title }}</mat-checkbox>
+  <mat-checkbox value="{{order.id}}" [(ngModel)]="order.checked" checked="order.checked" (change)="orderChange()">
+    {{ order.title }}</mat-checkbox>
   <p> {{ order.description }} </p>
 </mat-card>

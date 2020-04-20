@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
 
 @Component({
   selector: "app-search-resutls-card",
@@ -8,15 +8,19 @@ import { Component, OnInit, Input } from "@angular/core";
 export class SearchResutlsCardComponent implements OnInit {
   @Input() order: any[] = [];
   @Input() checked: boolean;
+
+  @Output() checkedItem: EventEmitter<string> = new EventEmitter();
+
   constructor() {}
 
   ngOnInit() {
-    console.log(this.checked);
+    // console.log(this.checked);
   }
 
   orderChange() {
-    this.checked = !this.checked;
-    let checkedData = this.checked + " " + this.order['id'];
-    console.log("info", checkedData);
+    console.log(this.order.checked);
+
+    this.checkedItem.emit(this.order.id);
   }
+
 }
