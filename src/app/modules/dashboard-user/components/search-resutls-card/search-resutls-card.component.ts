@@ -18,9 +18,9 @@ export class SearchResutlsCardComponent implements OnInit {
   }
 
   orderChange() {
-    console.log(this.order.checked);
+    console.log(this.order['checked']);
 
-    this.checkedItem.emit(this.order.id);
+    this.checkedItem.emit(this.order['id']);
   }
 
 }

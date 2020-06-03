@@ -23,10 +23,12 @@ export class HeaderComponent implements OnInit {
   openDialog() {
     const dialogConfig = new MatDialogConfig();
     dialogConfig.disableClose = true;
-    dialogConfig.data = {
-      userName: "Emiliano",
-      userLastName: "Hotes"
-    };
+    dialogConfig.data = [
+      'test', 'test2'
+    ]
+    //   userName: "Emiliano",
+    //   userLastName: "Hotes"
+    // };
 
     const dialogRef = this.matDialog.open(LoginDialogComponent, dialogConfig);
 

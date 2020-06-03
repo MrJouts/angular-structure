@@ -3,7 +3,8 @@
 
   <mat-form-field floatLabel="never">
     <input [(ngModel)]="searchValue" (keydown.enter)="search()" matInput placeholder="Buscar..." required>
-    <mat-icon matSuffix>search</mat-icon>
+    <!-- <mat-icon matSuffix>search</mat-icon> -->
+    <mat-icon svgIcon="search" matSuffix></mat-icon>
   </mat-form-field>
 
   <button mat-button color="primary" (click)="openDialog()">Login</button>

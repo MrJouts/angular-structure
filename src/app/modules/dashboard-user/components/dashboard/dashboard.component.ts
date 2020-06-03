@@ -1,5 +1,6 @@
+import { IconServiceService } from './../../../shared/services/icon-service.service';
 import { Component, OnInit } from '@angular/core';
-
+IconServiceService
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private iconService: IconServiceService) {}
 
   ngOnInit() {
+    this.iconService.registerIcons();
   }
 
 }

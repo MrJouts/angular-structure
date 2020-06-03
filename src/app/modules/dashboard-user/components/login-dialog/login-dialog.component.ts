@@ -13,7 +13,9 @@ export class LoginDialogComponent implements OnInit {
     public dialogRef: MatDialogRef<LoginDialogComponent>
   ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('mat dialog data',this.data)
+  }
 
   close() {
     this.dialogRef.close("thanks");

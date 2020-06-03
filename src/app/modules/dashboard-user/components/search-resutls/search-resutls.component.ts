@@ -15,7 +15,7 @@ export class SearchResutlsComponent implements OnInit {
   master_checked: boolean = false;
   checkedItems: any[] = [];
   selectedOrders: any;
-  showButton: boolean = false;
+  showBar: boolean = false;
 
   constructor(
     private messageService: MessageService,
@@ -63,9 +63,9 @@ export class SearchResutlsComponent implements OnInit {
 
   showSelectedOrders() {
     this.selectedOrders = this.orders.filter((order) => order.checked == true);
-    this.showButton = this.selectedOrders.length;
+    this.showBar = this.selectedOrders.length;
 
-    this.selectedOrders = JSON.stringify(this.selectedOrders);
+    // this.selectedOrders = JSON.stringify(this.selectedOrders);
   }
 
   checkedItem(item) {

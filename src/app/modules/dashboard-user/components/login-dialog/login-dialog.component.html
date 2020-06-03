@@ -4,6 +4,11 @@
   <p> Place content here </p>
   <p>{{data.userName}}</p>
   <p>{{data.userLastName}}</p>
+
+  <div *ngFor="let item of data">
+    <span>{{item}}</span>
+  </div>
+  <p> {{data['1']}}</p>
 </mat-dialog-content>
 
 <mat-dialog-actions>
